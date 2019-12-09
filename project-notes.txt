@@ -1,0 +1,18 @@
+Plan, Code, and Deploy a Startup in 2 Hours [Full-Stack JavaScript Tutorial]
+By Code Drip and freeCodeCamp.org
+URL: https://www.youtube.com/watch?v=lauywdXKEXI
+
+1) Plan and Create Front-End- 0:00
+    The front-end will utilize the React Framework.
+    Run this script at the root directory:
+        npm install create-react-app -g
+    Then run this script to create the cient:
+        create-react-app client
+    Within the client directory add material-ui:
+        npm install @material-ui/core
+
+    Inside the component API section of the material-ui docs, copy the import for 
+    typography and add it to a component of jobs.
+
+    The set-up is App.js will hold the application/use state which calling the hooks, 
+    jobs.js will hold the component tree plus render styling.
