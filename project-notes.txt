@@ -14,5 +14,8 @@ URL: https://www.youtube.com/watch?v=lauywdXKEXI
     Inside the component API section of the material-ui docs, copy the import for 
     typography and add it to a component of jobs.
 
-    The set-up is App.js will hold the application/use state which calling the hooks, 
-    jobs.js will hold the component tree plus render styling.
+    The set-up is: App.js will hold the application/use state while calling the hooks, 
+    jobs.js will hold the component tree plus the render styling.
+
+
+2) Create Front-End Part 2 with JSON Test- 5:15
