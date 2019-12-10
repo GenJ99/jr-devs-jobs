@@ -29,3 +29,10 @@ URL: https://www.youtube.com/watch?v=lauywdXKEXI
     is added to the worker index:
         node worker/index.js
     The console message should show every second.
+
+
+4) Iterate Through the job pages- 15:34
+    Add the node fetch library from root:
+        npm i node-fetch
+    Check the number of pages within the fetch-github.js file:
+        node worker/tasks/fetch-github.js
