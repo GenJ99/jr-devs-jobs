@@ -38,3 +38,8 @@ URL: https://www.youtube.com/watch?v=lauywdXKEXI
         node worker/tasks/fetch-github.js
 
 5) Loop Through the Jobs- 19:53
+
+6) Loop Through the Jobs Every Minute- 25:00
+Check to see if the the fetchGithub() function runs every minute within 
+worker index.js:
+    node worker/index.js
