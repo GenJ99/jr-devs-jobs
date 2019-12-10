@@ -31,8 +31,10 @@ URL: https://www.youtube.com/watch?v=lauywdXKEXI
     The console message should show every second.
 
 
-4) Iterate Through the job pages- 15:34
+4) Iterate Through the Job Pages- 15:34
     Add the node fetch library from root:
         npm i node-fetch
     Check the number of pages within the fetch-github.js file:
         node worker/tasks/fetch-github.js
+
+5) Loop Through the Jobs- 19:53

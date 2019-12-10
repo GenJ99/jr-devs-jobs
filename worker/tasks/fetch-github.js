@@ -2,12 +2,24 @@ const fetch = require("node-fetch");
 
 const baseURL = "https://jobs.github.com/positions.json";
 
-module.exports = async function fetchGithub() {
-  const res = await fetch(baseURL);
-  const jobs = await res.json();
-  console.log({ jobs });
+async function fetchGithub() {
+  let resultCount = 1,
+    onPage = 0;
+  const allJobs = [];
 
-  console.log(jobs.length);
-};
+  while (resultCount > 0) {
+    const res = await fetch(`${baseURL}?page=${onPage}`);
+    const jobs = await res.json();
+    allJobs.push(jobs);
+    resultCount = jobs.length;
 
-module.exports();
+    console.log("got", resultCount, "job");
+    onPage++;
+  }
+
+  console.log("got", allJobs.length, "jobs total");
+}
+
+fetchGithub();
+
+module.exports = fetchGithub;
