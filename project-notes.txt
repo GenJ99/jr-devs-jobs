@@ -19,3 +19,13 @@ URL: https://www.youtube.com/watch?v=lauywdXKEXI
 
 
 2) Create Front-End Part 2 with JSON Test- 5:15
+
+3) Create cron Worker- 10:00
+    Create a package JSON at root that will be accessible from all folders:
+        npm init -y
+    Add the cron dependency to run tasks on a timer:
+        npm i cron
+    Test to see if the cron worker functions properly when the Usage (basic cron usage)
+    is added to the worker index:
+        node worker/index.js
+    The console message should show every second.

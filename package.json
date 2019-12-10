@@ -1,0 +1,23 @@
+{
+  "name": "1.9._jr-dev-jobs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GenJ99/jr-devs-jobs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GenJ99/jr-devs-jobs/issues"
+  },
+  "homepage": "https://github.com/GenJ99/jr-devs-jobs#readme",
+  "dependencies": {
+    "cron": "^1.7.2"
+  }
+}
