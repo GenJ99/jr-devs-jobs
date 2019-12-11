@@ -43,3 +43,21 @@ URL: https://www.youtube.com/watch?v=lauywdXKEXI
 Check to see if the the fetchGithub() function runs every minute within 
 worker index.js:
     node worker/index.js
+
+7) Storage Solution, Redis- 28:32
+    The storage solution within this project is redis. With the Windows 10
+    distro, the solution is to add redis through the Windows Subsystem for
+    Linux(WSL). The instructions for install is at:
+        https://redislabs.com/blog/redis-on-windows-10/
+
+    Connect to the client with:
+        redis-client
+    Flush data in RAM from the cient with:
+        FLUSHALL
+
+    To use redis within node, add redis through npm:
+        npm install redis
+
+    Once the redis is setup within the fetch-github worker, within the CLI of 
+    redis type the following upon running the worker:
+        get github
