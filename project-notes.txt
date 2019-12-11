@@ -79,3 +79,5 @@ worker index.js:
     NOTE within the index.js api of response for the header to fetch at the front-end.
 
 11) Render the Jobs to the Front-end- 58:10
+
+12) Style CSS, Add Material-UI/Java Objects to Jobs.js- 59:20
