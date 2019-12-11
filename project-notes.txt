@@ -61,3 +61,6 @@ worker index.js:
     Once the redis is setup within the fetch-github worker, within the CLI of 
     redis type the following upon running the worker:
         get github
+
+
+8) Filter Algorithm- 39:00
