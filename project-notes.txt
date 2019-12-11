@@ -64,3 +64,12 @@ worker index.js:
 
 
 8) Filter Algorithm- 39:00
+
+9) API- 46:45
+    Install the Express dependency:
+        npm i express
+
+    Within the index file for the api, to see the res works for jobs, in the terminal
+    type:
+        curl http://localhost:3001/jobs
+    NOTE: The server needs to be running in node.js.
