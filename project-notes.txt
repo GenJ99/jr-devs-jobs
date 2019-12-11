@@ -77,3 +77,5 @@ worker index.js:
 
 10) Call API From the Client Front-end- 50:50
     NOTE within the index.js api of response for the header to fetch at the front-end.
+
+11) Render the Jobs to the Front-end- 58:10
