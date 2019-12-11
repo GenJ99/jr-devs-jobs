@@ -13,6 +13,7 @@ app.get("/jobs", async (req, res) => {
   // JSON LENGTH TEST
   //console.log(JSON.parse(jobs).length);
 
+  res.header("Access-Control-Allow-Origin", "http://localhost:3000");
   return res.send(jobs);
 });
 

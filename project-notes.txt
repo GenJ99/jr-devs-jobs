@@ -65,7 +65,7 @@ worker index.js:
 
 8) Filter Algorithm- 39:00
 
-9) API- 46:45
+9) index.js Express API- 46:45
     Install the Express dependency:
         npm i express
 
@@ -73,3 +73,7 @@ worker index.js:
     type:
         curl http://localhost:3001/jobs
     NOTE: The server needs to be running in node.js.
+
+
+10) Call API From the Client Front-end- 50:50
+    NOTE within the index.js api of response for the header to fetch at the front-end.
