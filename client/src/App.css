@@ -52,6 +52,11 @@ h1 {
   color: blue;
 }
 
+.detail-logo {
+  height: 30px;
+  float: right;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

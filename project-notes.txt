@@ -92,3 +92,9 @@ worker index.js:
 15) Pagination, Implement- 1:15:53
 
 16) Create Module- 1:17:20
+
+17) Module JSX and Job Objects- 1:28:58
+    NOTE: For the job description, in order to not have the content in html format,
+    have the job.description wrapped in:
+        <div dangerouslySetInnerHTML={{ __html: job.description }} />
+    HOWEVER: Use this sparingly as it is a security risk. This is due to the possiblity of   scripts being injected to someone elses browser by rendering html from a string.
