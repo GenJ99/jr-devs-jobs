@@ -90,3 +90,5 @@ worker index.js:
 14) Pagination, Add Page Numbers- 1:11:15
 
 15) Pagination, Implement- 1:15:53
+
+16) Create Module- 1:17:20

@@ -9,8 +9,22 @@ import KeyboardArrowRight from "@material-ui/icons/KeyboardArrowRight";
 
 // COMPONENTS
 import Job from "./Job";
+import JobModal from "./JobModal";
 
 export default function Jobs({ jobs }) {
+  const [open, setOpen] = React.useState(false);
+  const [selectedJob, selectJob] = React.useState({});
+
+  //MODAL FUNCTIONS
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  // PAGINATION VARIABLES
   const numJobs = jobs.length;
   const numPages = Math.ceil(numJobs / 50);
   const [activeStep, setActiveStep] = React.useState(0);
@@ -32,6 +46,8 @@ export default function Jobs({ jobs }) {
 
   return (
     <div className="jobs">
+      <JobModal open={open} job={selectedJob} handleClose={handleClose} />
+
       {/* TITLE */}
       <Typography variant="h4" component="h1">
         Entry Level Sofware Jobs
@@ -43,8 +59,16 @@ export default function Jobs({ jobs }) {
       </Typography>
 
       {/* JOBS MAP */}
-      {jobsOnPage.map(job => (
-        <Job job={job} />
+      {jobsOnPage.map((job, i) => (
+        <Job
+          key={i}
+          job={job}
+          onClick={() => {
+            console.log("Click");
+            handleClickOpen();
+            selectJob(job);
+          }}
+        />
       ))}
 
       <div>

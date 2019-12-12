@@ -32,6 +32,10 @@ body {
   margin: 20px 40px;
 }
 
+h1 {
+  text-align: left;
+}
+
 .job {
   width: 80%;
   margin: 0 auto;
@@ -41,6 +45,11 @@ body {
   padding: 20px 10px;
   align-items: center;
   text-align: left;
+}
+
+.job:hover {
+  cursor: pointer;
+  color: blue;
 }
 
 @keyframes App-logo-spin {
