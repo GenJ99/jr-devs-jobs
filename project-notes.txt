@@ -69,7 +69,7 @@ worker index.js:
     Install the Express dependency:
         npm i express
 
-    Within the index file for the api, to see the res works for jobs, in the terminal
+    Within the index file for the api, to see that res works for jobs, in the terminal
     type:
         curl http://localhost:3001/jobs
     NOTE: The server needs to be running in node.js.
@@ -81,3 +81,7 @@ worker index.js:
 11) Render the Jobs to the Front-end- 58:10
 
 12) Style CSS, Add Material-UI/Java Objects to Jobs.js- 59:20
+
+13) Pagination, Add View in Jobs Component- 1:06:35
+    Within the client directory the @material-ui/icons dependency needs to be added:
+        npm i @material-ui/icons 
