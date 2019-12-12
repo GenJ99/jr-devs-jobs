@@ -85,3 +85,6 @@ worker index.js:
 13) Pagination, Add View in Jobs Component- 1:06:35
     Within the client directory the @material-ui/icons dependency needs to be added:
         npm i @material-ui/icons 
+
+
+14) Pagination, Add Page Numbers- 1:11:15

@@ -11,6 +11,8 @@ import KeyboardArrowRight from "@material-ui/icons/KeyboardArrowRight";
 import Job from "./Job";
 
 export default function Jobs({ jobs }) {
+  const numJobs = jobs.length;
+  const numPages = Math.ceil(numJobs / 50);
   const [activeStep, setActiveStep] = React.useState(0);
 
   // step == 0, show 0-49
@@ -29,8 +31,14 @@ export default function Jobs({ jobs }) {
 
   return (
     <div className="jobs">
+      {/* TITLE */}
       <Typography variant="h4" component="h1">
         Entry Level Sofware Jobs
+      </Typography>
+
+      {/* TOTAL JOBS */}
+      <Typography variant="h6" component="h1">
+        Found {numJobs} Jobs
       </Typography>
 
       {/* JOBS MAP */}
@@ -38,9 +46,13 @@ export default function Jobs({ jobs }) {
         <Job job={job} />
       ))}
 
+      <div>
+        Page {activeStep + 1} of {numPages}
+      </div>
+
       <MobileStepper
         variant="progress"
-        steps={6}
+        steps={numPages}
         position="static"
         activeStep={activeStep}
         nextButton={
